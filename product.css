@@ -1250,9 +1250,10 @@ body.super-sol-page .mangrove-process {
 .mangrove-benefits-flow {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 480px));
+  justify-content: center;
   gap: 2.8rem;
-  padding-top: 3rem; /* moved boxes slightly upward */
+  padding-top: 3.5rem; /* moved boxes slightly upward */
 }
 
 .mangrove-benefits-flow::before {
@@ -1265,11 +1266,11 @@ body.super-sol-page .mangrove-process {
 
 .mangrove-benefit-card {
   position: relative;
-  min-height: 240px; /* slightly increased to avoid cramped look */
+  min-height: 260px; /* slightly increased to avoid cramped look */
   border: 2px solid rgba(var(--green-rgb), 0.75);
   border-radius: 24px;
   background: #fff;
-  padding: 7.5rem 1.35rem 1.4rem; /* added a little upper and lower space */
+  padding: 8.5rem 1.8rem 1.8rem; /* added a little upper and lower space */
   box-shadow: 0 10px 26px rgba(var(--green-rgb), 0.12);
   overflow: visible;
 }
@@ -1290,11 +1291,11 @@ body.super-sol-page .mangrove-process {
 
 .mangrove-benefit-icon-wrap {
   position: absolute;
-  top: -2.1rem;
+  top: -2.5rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 74px;
-  height: 74px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   background: var(--green);
   border: 2px solid var(--green);
@@ -1306,8 +1307,8 @@ body.super-sol-page .mangrove-process {
 }
 
 .mangrove-benefit-icon {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   object-fit: contain;
   display: block;
 }
@@ -1317,9 +1318,9 @@ body.super-sol-page .mangrove-process {
   top: 0;
   left: 0;
   right: 0;
-  min-height: 112px;
-  height: 112px;
-  padding: 2.4rem 1.2rem 0.9rem;
+  min-height: 120px;
+  height: 120px;
+  padding: 2.8rem 1.5rem 0.9rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1332,7 +1333,7 @@ body.super-sol-page .mangrove-process {
 .mangrove-benefit-card-header h3 {
   margin: 0;
   max-width: 90%;
-  font-size: clamp(0.98rem, 1.25vw, 1.28rem);
+  font-size: clamp(1.1rem, 1.4vw, 1.45rem);
   line-height: 1.15;
   font-weight: 700;
   color: var(--green);
@@ -1340,7 +1341,7 @@ body.super-sol-page .mangrove-process {
 
 .mangrove-benefit-card p {
   margin: 0;
-  font-size: clamp(0.9rem, 1.08vw, 1.05rem);
+  font-size: clamp(0.95rem, 1.1vw, 1.1rem);
   line-height: 1.45;
   color: var(--green);
 }

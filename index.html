@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -32,7 +32,13 @@
       </div>
       <nav class="nav-links">
         <a href="index.html" class="active">Home</a>
-        <a href="product.html">Product</a>
+        <div class="nav-dropdown">
+          <a href="product.html" class="nav-dropdown-trigger">PRODUCT</a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="product.html">e-WASH</a></li>
+            <li><a href="super-sol.html">Super Sol</a></li>
+          </ul>
+        </div>
         <a href="data.html">Data</a>
         <a href="about.html">About Us</a>
         <a href="faq.html">FAQ</a>
@@ -46,10 +52,7 @@
       <section class="hero-content" data-hero-sync aria-live="polite">
         <div class="hero-left">
           <div class="hero-switch hero-switch--brand">
-            <div
-              class="hero-switch-layer is-on"
-              data-hero-brand-layer
-            >
+            <div class="hero-switch-layer is-on" data-hero-brand-layer>
               <img
                 src="images/logo.png"
                 alt="e-WASH powered by MIRAE"
@@ -57,10 +60,7 @@
                 decoding="async"
               />
             </div>
-            <div
-              class="hero-switch-layer is-off"
-              data-hero-brand-layer
-            >
+            <div class="hero-switch-layer is-off" data-hero-brand-layer>
               <img
                 src="images/Super%20Sol.png"
                 alt="Super Sol powered by MIRAE"
@@ -74,10 +74,7 @@
         <div class="hero-right">
           <div class="hero-image-card">
             <div class="hero-switch hero-switch--visual">
-              <div
-                class="hero-switch-layer is-on"
-                data-hero-visual-layer
-              >
+              <div class="hero-switch-layer is-on" data-hero-visual-layer>
                 <div class="hero-visual">
                   <img
                     src="images/water.png"
@@ -91,10 +88,7 @@
                   />
                 </div>
               </div>
-              <div
-                class="hero-switch-layer is-off"
-                data-hero-visual-layer
-              >
+              <div class="hero-switch-layer is-off" data-hero-visual-layer>
                 <img
                   src="images/ss.png"
                   alt="SS product"
@@ -108,291 +102,1343 @@
       </section>
     </main>
 
-    
-<section id="features" class="section features-section">
-
-  <div class="section-inner">
-    <div class="portfolio-switch" role="tablist" aria-label="Select product portfolio">
-      <button type="button" class="portfolio-switch-btn is-active" role="tab" aria-selected="true" data-portfolio="ewash">
-        e-WASH
-      </button>
-      <button type="button" class="portfolio-switch-btn" role="tab" aria-selected="false" data-portfolio="supersol">
-        Super Sol
-      </button>
-    </div>
-
-    <h2 class="portfolio-title" id="portfolio-title"><span class="portfolio-brand" id="portfolio-brand">e-WASH</span> Product Portfolio</h2>
-
-    <div class="portfolio-panel" data-portfolio-panel="ewash">
-    <div class="portfolio-grid">
-      <div class="portfolio-left">
-        <div class="glass portfolio-card-large">
-          <img
-            src="images/f1.jpg"
-            alt="e-WASH multipurpose cleaner portfolio visual"
-            class="portfolio-image"
-          />
-          <p style="text-indent: 3em;">
-            e-WASH Multipurpose Cleaner, this product is made using a unique electrolysis
-            method to create Super Alkaline Ionized Water (SAIW). It is a safe and
-            eco-friendly cleaner that is kind to both people and the environment. With a
-            high pH of 12.5, it provides powerful cleaning, effectively removing stains,
-            disinfecting, and deodorizing. It can be used safely on surfaces like
-            refrigerators, kitchens, and everyday household items, as well as for removing
-            harmful substances like chemicals.
-          </p>
-        </div>
-      </div>
-
-      <div class="portfolio-right">
-        <div class="portfolio-card glass">
-          <div class="card-content">
-            <div class="number-box">1</div>
-            <div class="text-content">
-              <h3>Smart Cleaning Solutions</h3>
-              <p>
-                Reduced water and chemical consumption results in 75% reduction in chemical waste.
-              </p>
-            </div>
-          </div>
+    <section id="features" class="section features-section">
+      <div class="section-inner">
+        <div
+          class="portfolio-switch"
+          role="tablist"
+          aria-label="Select product portfolio"
+        >
+          <button
+            type="button"
+            class="portfolio-switch-btn is-active"
+            role="tab"
+            aria-selected="true"
+            data-portfolio="ewash"
+          >
+            e-WASH
+          </button>
+          <button
+            type="button"
+            class="portfolio-switch-btn"
+            role="tab"
+            aria-selected="false"
+            data-portfolio="supersol"
+          >
+            Super Sol
+          </button>
         </div>
 
-        <div class="portfolio-card glass">
-          <div class="card-content">
-            <div class="number-box">2</div>
-            <div class="text-content">
-              <h3>Disinfection Power</h3>
-              <p>
-                Advanced sanitizing technologies effective against common pathogens, bacteria, and E. coli.
-              </p>
-            </div>
-          </div>
-        </div>
+        <h2 class="portfolio-title" id="portfolio-title">
+          <span class="portfolio-brand" id="portfolio-brand">e-WASH</span>
+          Product Portfolio
+        </h2>
 
-        <div class="portfolio-card glass">
-          <div class="card-content">
-            <div class="number-box">3</div>
-            <div class="text-content">
-              <h3>Sustainable Cleaning Products</h3>
-              <p>
-                Biodegradable and non-toxic cleaning agents for various applications.
-              </p>
+        <div class="portfolio-panel" data-portfolio-panel="ewash">
+          <div class="portfolio-grid">
+            <div class="portfolio-left">
+              <div class="glass portfolio-card-large">
+                <img
+                  src="images/f1.jpg"
+                  alt="e-WASH multipurpose cleaner portfolio visual"
+                  class="portfolio-image"
+                />
+                <p style="text-indent: 3em">
+                  e-WASH Multipurpose Cleaner, this product is made using a
+                  unique electrolysis method to create Super Alkaline Ionized
+                  Water (SAIW). It is a safe and eco-friendly cleaner that is
+                  kind to both people and the environment. With a high pH of
+                  12.5, it provides powerful cleaning, effectively removing
+                  stains, disinfecting, and deodorizing. It can be used safely
+                  on surfaces like refrigerators, kitchens, and everyday
+                  household items, as well as for removing harmful substances
+                  like chemicals.
+                </p>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
 
-    <div class="portfolio-panel" data-portfolio-panel="supersol" hidden>
-    <div class="portfolio-grid">
-      <div class="portfolio-right">
-        <div class="supersol-ill-wrap">
-          <img src="images/ill.png" alt="Super Sol features overview" class="supersol-ill-image" />
-        </div>
-        <h3 class="supersol-features-title">ENVIRONMENTAL IMPACT</h3>
-        <img src="images/100.png" alt="Super Sol environmental impact diagram" class="supersol-ill-image" />
-        <h3 class="supersol-features-title">FEATURES OF <span>Super Sol</span></h3>
-        <div class="supersol-features">
-          <div class="supersol-feature">
-            <img src="images/sf1.png" alt="Super Sol feature 1" class="supersol-feature-img" />
-            <div class="supersol-feature-text">
-              <h3>1. Porous</h3>
-              <p>The feature is that there are countless large and small holes.</p>
-            </div>
-          </div>
+            <div class="portfolio-right">
+              <div class="portfolio-card glass">
+                <div class="card-content">
+                  <div class="number-box">1</div>
+                  <div class="text-content">
+                    <h3>Smart Cleaning Solutions</h3>
+                    <p>
+                      Reduced water and chemical consumption results in 75%
+                      reduction in chemical waste.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-          <div class="supersol-feature">
-            <img src="images/sf2.png" alt="Super Sol feature 2" class="supersol-feature-img" />
-            <div class="supersol-feature-text">
-              <h3>2. Inorganic Material</h3>
-              <p>Resistant to heat and chemicals.</p>
-            </div>
-          </div>
+              <div class="portfolio-card glass">
+                <div class="card-content">
+                  <div class="number-box">2</div>
+                  <div class="text-content">
+                    <h3>Disinfection Power</h3>
+                    <p>
+                      Advanced sanitizing technologies effective against common
+                      pathogens, bacteria, and E. coli.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-          <div class="supersol-feature">
-            <img src="images/sf3.png" alt="Super Sol feature 3" class="supersol-feature-img" />
-            <div class="supersol-feature-text">
-              <h3>3. Water retention &amp; permeability</h3>
-              <p>The porosity of Super Sol prepares the soil environment.</p>
-            </div>
-          </div>
-
-          <div class="supersol-feature">
-            <img src="images/sf4.png" alt="Super Sol feature 4" class="supersol-feature-img" />
-            <div class="supersol-feature-text">
-              <h3>4. ECO</h3>
-              <p>Super Sol is a recycling product from soil to soil.</p>
-            </div>
-          </div>
-
-          <div class="supersol-feature">
-            <img src="images/sf5.png" alt="Super Sol feature 5" class="supersol-feature-img" />
-            <div class="supersol-feature-text">
-              <h3>5. Super Light</h3>
-              <p>The specific gravity of the Super Sol is 0.25–1.6. It is possible to control the specific gravity from light enough to float on water to sinking in water.</p>
-            </div>
-          </div>
-
-          <div class="supersol-feature">
-            <img src="images/sf6.png" alt="Super Sol feature 6" class="supersol-feature-img" />
-            <div class="supersol-feature-text">
-              <h3>6. Workability</h3>
-              <p>There is no need for Super Sol curing, and it can be used with simple construction such as leveling and rolling.</p>
+              <div class="portfolio-card glass">
+                <div class="card-content">
+                  <div class="number-box">3</div>
+                  <div class="text-content">
+                    <h3>Sustainable Cleaning Products</h3>
+                    <p>
+                      Biodegradable and non-toxic cleaning agents for various
+                      applications.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="super-sol-section super-sol-section--embedded" aria-label="Super Sol key characteristics">
-      <div class="super-sol-inner super-sol-inner--portfolio">
-        <h3 class="super-sol-characteristics-title">CHARACTERISTICS OF <span>Super Sol</span></h3>
-        <div class="super-sol-portfolio-wrap" data-supersol-connectors>
-          <svg class="super-sol-portfolio-lines" aria-hidden="true">
-            <line data-supersol-line="l1"></line>
-            <line data-supersol-line="l2"></line>
-            <line data-supersol-line="l3"></line>
-            <line data-supersol-line="r1"></line>
-            <line data-supersol-line="r2"></line>
-            <line data-supersol-line="r3"></line>
-          </svg>
-          <div class="super-sol-portfolio-grid">
-          <article class="super-sol-feature-box super-sol-feature-box--l1">
-            <h3 class="super-sol-feature-title">Water Retention</h3>
-            <p class="super-sol-feature-desc">Creates an environment for plants to grow</p>
-          </article>
-          <article class="super-sol-feature-box super-sol-feature-box--l2">
-            <h3 class="super-sol-feature-title">Inorganic Mineral</h3>
-            <p class="super-sol-feature-desc">Resistant to heat and chemicals</p>
-          </article>
-          <article class="super-sol-feature-box super-sol-feature-box--l3">
-            <h3 class="super-sol-feature-title">Porous Structure</h3>
-            <p class="super-sol-feature-desc">Contains countless holes</p>
-          </article>
-          <div class="super-sol-portfolio-center">
-            <div class="super-sol-portfolio-center-circle">
+        <div class="portfolio-panel" data-portfolio-panel="supersol" hidden>
+          <div class="portfolio-grid">
+            <div class="portfolio-right">
+              <div class="supersol-ill-wrap">
+                <img
+                  src="images/ill.png"
+                  alt="Super Sol features overview"
+                  class="supersol-ill-image"
+                />
+              </div>
+              <h3 class="supersol-features-title">ENVIRONMENTAL IMPACT</h3>
               <img
-                src="images/sf5.png"
-                alt="Super Sol porous lightweight material"
-                class="super-sol-portfolio-image"
+                src="images/100.png"
+                alt="Super Sol environmental impact diagram"
+                class="supersol-ill-image"
               />
+              <h3 class="supersol-features-title">
+                FEATURES OF <span>Super Sol</span>
+              </h3>
+              <div class="supersol-features">
+                <div class="supersol-feature">
+                  <img
+                    src="images/sf1.png"
+                    alt="Super Sol feature 1"
+                    class="supersol-feature-img"
+                  />
+                  <div class="supersol-feature-text">
+                    <h3>1. Porous</h3>
+                    <p>
+                      The feature is that there are countless large and small
+                      holes.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="supersol-feature">
+                  <img
+                    src="images/sf2.png"
+                    alt="Super Sol feature 2"
+                    class="supersol-feature-img"
+                  />
+                  <div class="supersol-feature-text">
+                    <h3>2. Inorganic Material</h3>
+                    <p>Resistant to heat and chemicals.</p>
+                  </div>
+                </div>
+
+                <div class="supersol-feature">
+                  <img
+                    src="images/sf3.png"
+                    alt="Super Sol feature 3"
+                    class="supersol-feature-img"
+                  />
+                  <div class="supersol-feature-text">
+                    <h3>3. Water retention &amp; permeability</h3>
+                    <p>
+                      The porosity of Super Sol prepares the soil environment.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="supersol-feature">
+                  <img
+                    src="images/sf4.png"
+                    alt="Super Sol feature 4"
+                    class="supersol-feature-img"
+                  />
+                  <div class="supersol-feature-text">
+                    <h3>4. ECO</h3>
+                    <p>Super Sol is a recycling product from soil to soil.</p>
+                  </div>
+                </div>
+
+                <div class="supersol-feature">
+                  <img
+                    src="images/sf5.png"
+                    alt="Super Sol feature 5"
+                    class="supersol-feature-img"
+                  />
+                  <div class="supersol-feature-text">
+                    <h3>5. Super Light</h3>
+                    <p>
+                      The specific gravity of the Super Sol is 0.25–1.6. It is
+                      possible to control the specific gravity from light enough
+                      to float on water to sinking in water.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="supersol-feature">
+                  <img
+                    src="images/sf6.png"
+                    alt="Super Sol feature 6"
+                    class="supersol-feature-img"
+                  />
+                  <div class="supersol-feature-text">
+                    <h3>6. Workability</h3>
+                    <p>
+                      There is no need for Super Sol curing, and it can be used
+                      with simple construction such as leveling and rolling.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <article class="super-sol-feature-box super-sol-feature-box--r1">
-            <h3 class="super-sol-feature-title">ECO</h3>
-            <p class="super-sol-feature-desc">Recycling from soil to soil</p>
-          </article>
-          <article class="super-sol-feature-box super-sol-feature-box--r2">
-            <h3 class="super-sol-feature-title">Ultralight</h3>
-            <p class="super-sol-feature-desc">Very lightweight and easy to work with</p>
-          </article>
-          <article class="super-sol-feature-box super-sol-feature-box--r3">
-            <h3 class="super-sol-feature-title">Drainage</h3>
-            <p class="super-sol-feature-desc">Less likely to become clogged</p>
-          </article>
+
+          <div
+            class="super-sol-section super-sol-section--embedded"
+            aria-label="Super Sol key characteristics"
+          >
+            <div class="super-sol-inner super-sol-inner--portfolio">
+              <h3 class="super-sol-characteristics-title">
+                CHARACTERISTICS OF <span>Super Sol</span>
+              </h3>
+              <div class="super-sol-portfolio-wrap" data-supersol-connectors>
+                <svg class="super-sol-portfolio-lines" aria-hidden="true">
+                  <line data-supersol-line="l1"></line>
+                  <line data-supersol-line="l2"></line>
+                  <line data-supersol-line="l3"></line>
+                  <line data-supersol-line="r1"></line>
+                  <line data-supersol-line="r2"></line>
+                  <line data-supersol-line="r3"></line>
+                </svg>
+                <div class="super-sol-portfolio-grid">
+                  <article
+                    class="super-sol-feature-box super-sol-feature-box--l1"
+                  >
+                    <h3 class="super-sol-feature-title">Water Retention</h3>
+                    <p class="super-sol-feature-desc">
+                      Creates an environment for plants to grow
+                    </p>
+                  </article>
+                  <article
+                    class="super-sol-feature-box super-sol-feature-box--l2"
+                  >
+                    <h3 class="super-sol-feature-title">Inorganic Mineral</h3>
+                    <p class="super-sol-feature-desc">
+                      Resistant to heat and chemicals
+                    </p>
+                  </article>
+                  <article
+                    class="super-sol-feature-box super-sol-feature-box--l3"
+                  >
+                    <h3 class="super-sol-feature-title">Porous Structure</h3>
+                    <p class="super-sol-feature-desc">
+                      Contains countless holes
+                    </p>
+                  </article>
+                  <div class="super-sol-portfolio-center">
+                    <div class="super-sol-portfolio-center-circle">
+                      <img
+                        src="images/sf5.png"
+                        alt="Super Sol porous lightweight material"
+                        class="super-sol-portfolio-image"
+                      />
+                    </div>
+                  </div>
+                  <article
+                    class="super-sol-feature-box super-sol-feature-box--r1"
+                  >
+                    <h3 class="super-sol-feature-title">ECO</h3>
+                    <p class="super-sol-feature-desc">
+                      Recycling from soil to soil
+                    </p>
+                  </article>
+                  <article
+                    class="super-sol-feature-box super-sol-feature-box--r2"
+                  >
+                    <h3 class="super-sol-feature-title">Ultralight</h3>
+                    <p class="super-sol-feature-desc">
+                      Very lightweight and easy to work with
+                    </p>
+                  </article>
+                  <article
+                    class="super-sol-feature-box super-sol-feature-box--r3"
+                  >
+                    <h3 class="super-sol-feature-title">Drainage</h3>
+                    <p class="super-sol-feature-desc">
+                      Less likely to become clogged
+                    </p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="super-sol-projects-spacing" style="height: 80px"></div>
+
+          <div class="super-sol-applications" aria-label="Super Sol Projects">
+            <div class="super-sol-applications-inner">
+              <h3 class="super-sol-characteristics-title">PROJECTS</h3>
+              <div class="desei-model-card">
+                <div class="desei-logo-abs">
+                  <img
+                    src="images/DESEI.png"
+                    alt="DESEI Pacific Model Logo"
+                    class="desei-logo-img"
+                  />
+                </div>
+
+                <div class="desei-content">
+                  <h4 class="desei-title">DESEI Model</h4>
+                  <div class="desei-text">
+                    <p>
+                      Integrated Japanese technologies for a replicable
+                      decentralized environmental and sanitation model in
+                      Southeast Asian island communities.
+                    </p>
+                    <p>
+                      We hope our project can contribute to the magnificent El
+                      Nido region, one of the Philippines' leading tourist
+                      destinations and often referred to as "the last remaining
+                      unspoiled nature."
+                    </p>
+                  </div>
+                  <div class="desei-footer">
+                    <p>
+                      Powered by: <strong>MIRAe Design Trading Inc.</strong>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="desei-date-abs">
+                  <p>Created on April 26, 2026</p>
+                </div>
+              </div>
+
+              <div
+                class="super-sol-projects-spacing"
+                style="height: 40px"
+              ></div>
+
+              <div class="proposal-outline-card">
+                <h4 class="proposal-outline-title">Proposal Outline</h4>
+                <p class="proposal-outline-desc">
+                  DESEI integrates decentralized rainwater capture, manual
+                  access, localized transport, and centralized UF60 treatment
+                  into a repeatable operating model.
+                </p>
+
+                <div class="proposal-outline-grid">
+                  <div class="proposal-box proposal-box--resilience">
+                    <h5>Resilience</h5>
+                  </div>
+                  <div class="proposal-box proposal-box--quality">
+                    <h5>Quality</h5>
+                  </div>
+                  <div class="proposal-box proposal-box--replicability">
+                    <h5>Replicability</h5>
+                  </div>
+                </div>
+
+                <div class="proposal-pilot-banner">
+                  <p class="pilot-title">
+                    Pilot operation can be explained, costed, and replicated by
+                    standardizing:
+                  </p>
+                  <p class="pilot-steps">
+                    ① source/storage ② access/transport ③ pressure/treatment ④
+                    distribution.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="super-sol-projects-spacing"
+                style="height: 60px"
+              ></div>
+
+              <div class="model-definition-section">
+                <h4 class="proposal-outline-title">Model Definition</h4>
+                <p class="proposal-outline-desc">
+                  DESEI is not a single-product export; it is an operationally
+                  reproducible deployment model.
+                </p>
+
+                <div class="model-def-grid">
+                  <div class="model-def-text-box">
+                    <div class="model-def-content">
+                      <p>
+                        A model that integrates Japanese technologies to form
+                        decentralized environmental and sanitation
+                        infrastructure in Southeast Asian island communities.
+                      </p>
+                      <p>
+                        It is not stand-alone product export, but a replicable
+                        deployment model built on clearly defined operating
+                        conditions.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="model-logic-box">
+                    <h5 class="model-logic-title">Model Logic</h5>
+                    <div class="model-logic-flow">
+                      <div class="model-logic-step model-logic-step--source">
+                        Source | Rainwater capture
+                      </div>
+                      <div class="model-logic-arrow">↓</div>
+                      <div class="model-logic-step model-logic-step--storage">
+                        Storage | Super Sol tank
+                      </div>
+                      <div class="model-logic-arrow">↓</div>
+                      <div class="model-logic-step model-logic-step--access">
+                        Access | Hand pump & transport
+                      </div>
+                      <div class="model-logic-arrow">↓</div>
+                      <div class="model-logic-step model-logic-step--treatment">
+                        Treatment | UF60 + Auxiliary water tank
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="super-sol-projects-spacing"
+                style="height: 60px"
+              ></div>
+
+              <div class="daily-flow-section">
+                <h4 class="proposal-outline-title">Daily Operational Flow</h4>
+                <p class="proposal-outline-desc">
+                  Core workflow for the pilot site and City Hall treatment
+                  operation
+                </p>
+
+                <div class="daily-flow-grid">
+                  <div class="daily-step daily-step--1">
+                    <span class="step-num">1</span>
+                    <p>Rainwater Storage</p>
+                  </div>
+                  <div class="uf60-arrow"></div>
+                  <div class="daily-step daily-step--2">
+                    <span class="step-num">2</span>
+                    <p>Hand Pump</p>
+                  </div>
+                  <div class="uf60-arrow"></div>
+                  <div class="daily-step daily-step--3">
+                    <span class="step-num">3</span>
+                    <p>Transport (100m)</p>
+                  </div>
+                  <div class="uf60-arrow"></div>
+                  <div class="daily-step daily-step--4">
+                    <span class="step-num">4</span>
+                    <p>Auxiliary water tank water pressure</p>
+                  </div>
+                  <div class="uf60-arrow"></div>
+                  <div class="daily-step daily-step--5">
+                    <span class="step-num">5</span>
+                    <p>UF60 Treatment</p>
+                  </div>
+                  <div class="uf60-arrow"></div>
+                  <div class="daily-step daily-step--6">
+                    <span class="step-num">6</span>
+                    <p>Alkaline Ionized Water e-WASH Output pH12.5</p>
+                  </div>
+                </div>
+
+                <div class="key-conditions-box">
+                  <h5 class="key-conditions-title">Key Operating Conditions</h5>
+                  <ul class="key-conditions-list">
+                    <li>Water is drawn manually from storage.</li>
+                    <li>Water is transported ~100m to City Hall.</li>
+                    <li>
+                      A water pressure of 0.4 MPa is supplied from an auxiliary
+                      supply tank, enabling a stable supply of UF60.
+                    </li>
+                    <li>Output is pH 12.5 alkaline e-WASH.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div
+                class="super-sol-projects-spacing"
+                style="height: 60px"
+              ></div>
+
+              <div class="roles-workplan-section">
+                <h4 class="proposal-outline-title">Roles & Daily Work Plan</h4>
+                <p class="proposal-outline-desc">
+                  Recommended minimum team structure for daily field operation.
+                </p>
+
+                <div class="workplan-container">
+                  <div class="roles-table-container">
+                    <table class="roles-table">
+                      <thead>
+                        <tr>
+                          <th>Role</th>
+                          <th>No.</th>
+                          <th>Time</th>
+                          <th>Main Task</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="row-even">
+                          <td>Pump Operator</td>
+                          <td>1</td>
+                          <td>AM</td>
+                          <td>Hand-pump withdrawal</td>
+                        </tr>
+                        <tr class="row-odd">
+                          <td>Transport crew</td>
+                          <td>2</td>
+                          <td>AM</td>
+                          <td>Carry water 100m</td>
+                        </tr>
+                        <tr class="row-even">
+                          <td>UF60 operator</td>
+                          <td>1</td>
+                          <td>Noon</td>
+                          <td>Rooftop tank + UF60</td>
+                        </tr>
+                        <tr class="row-odd">
+                          <td>Distribution lead</td>
+                          <td>2</td>
+                          <td>PM</td>
+                          <td>Delivery to users</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="daily-cycle-horizontal-box">
+                    <h5 class="daily-cycle-title">Suggested Daily Cycle</h5>
+                    <div class="horizontal-timeline">
+                      <div class="h-timeline-item">
+                        <span class="h-activity">Pump from<br />Storage</span>
+                        <div class="h-dot"></div>
+                        <span class="h-time">09:00</span>
+                      </div>
+                      <div class="h-timeline-item">
+                        <span class="h-activity"
+                          >Move water<br />to City Hall</span
+                        >
+                        <div class="h-dot"></div>
+                        <span class="h-time">10:00</span>
+                      </div>
+                      <div class="h-timeline-item">
+                        <span class="h-activity">Fill rooftop<br />tank</span>
+                        <div class="h-dot"></div>
+                        <span class="h-time">11:00</span>
+                      </div>
+                      <div class="h-timeline-item">
+                        <span class="h-activity">Run UF60</span>
+                        <div class="h-dot"></div>
+                        <span class="h-time">14:00</span>
+                      </div>
+                      <div class="h-timeline-item">
+                        <span class="h-activity">Deliver e-WASH</span>
+                        <div class="h-dot"></div>
+                        <span class="h-time">16:00</span>
+                      </div>
+                      <div class="h-timeline-item">
+                        <span class="h-activity"
+                          >Cleanup and<br />preparation</span
+                        >
+                        <div class="h-dot"></div>
+                        <span class="h-time">17:00</span>
+                      </div>
+                      <div class="h-timeline-line"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="super-sol-projects-spacing"
+                style="height: 60px"
+              ></div>
+
+              <div class="uf60-logic-section">
+                <h4 class="proposal-outline-title">UF60 Treatment Logic</h4>
+                <p class="proposal-outline-desc">
+                  Why rooftop storage is required: stable head pressure for
+                  multi-stage treatment.
+                </p>
+
+                <div class="uf60-flow-grid">
+                  <div class="uf60-step uf60-step--storage">Storage</div>
+                  <div class="uf60-arrow"></div>
+                  <div class="uf60-step uf60-step--lift">Lift</div>
+                  <div class="uf60-arrow"></div>
+                  <div class="uf60-step uf60-step--filter">Filter</div>
+                  <div class="uf60-arrow"></div>
+                  <div class="uf60-step uf60-step--ro">RO</div>
+                  <div class="uf60-arrow"></div>
+                  <div class="uf60-step uf60-step--electrolysis">
+                    Electrolysis
+                  </div>
+                  <div class="uf60-arrow"></div>
+                  <div class="uf60-step uf60-step--output">Output</div>
+                </div>
+
+                <div class="uf60-details-grid">
+                  <div class="uf60-card uf60-card--technical">
+                    <h5>Technical Conditions</h5>
+                    <ul>
+                      <li>UF60 requires constant water pressure</li>
+                      <li>
+                        Therefore, after ground transportation, it is
+                        transferred to an auxiliary supply tank
+                      </li>
+                      <li>
+                        Stable supply to the processing line with an electric
+                        pump of 0.4 Mpa
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="uf60-card uf60-card--matters">
+                    <h5>Why this matters</h5>
+                    <ul>
+                      <li>Quality output with lower power dependency.</li>
+                      <li>
+                        Links decentralized access with centralized treatment.
+                      </li>
+                      <li>Makes deployment conditions replicable.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="super-sol-projects-spacing"
+                style="height: 60px"
+              ></div>
+
+              <div class="rainfall-section">
+                <h4 class="proposal-outline-title">
+                  Annual rainfall in the El Nido region
+                </h4>
+                <p class="proposal-outline-desc">
+                  Annual rainfall and number of travelers
+                </p>
+
+                <div class="rainfall-graph-placeholder">
+                  <!-- Graph to be placed here later -->
+                  <img class="graph" src="images/graph.png" alt="" />
+                </div>
+
+                <div class="rainfall-insight">
+                  <p>
+                    <strong>Insight:</strong> Tourism numbers (line) clearly
+                    peak during the dry season (low bars) and drop significantly
+                    during the peak wet season, showing a inverse relationship.
+                  </p>
+                </div>
+
+                <div class="rainfall-reference">
+                  <p>
+                    References :
+                    <a
+                      href="https://weather-and-climate.com/average-monthly-precipitation-Rainfall,el-nido-ph,Philippines"
+                      target="_blank"
+                      >https://weather-and-climate.com/average-monthly-precipitation-Rainfall,el-nido-ph,Philippines</a
+                    >
+                  </p>
+                </div>
+                <div
+                  class="super-sol-projects-spacing"
+                  style="height: 60px"
+                ></div>
+                <div class="roadmap-section">
+                  <h4 class="proposal-outline-title">DESEI Model Roadmap</h4>
+
+                  <div class="roadmap-fy-header">
+                    <div class="fy-block fy-2026">
+                      <span class="fy-label">FY2026</span>
+                      <div class="fy-months">
+                        <span>Apr.</span><span>Jul.</span><span>Oct.</span
+                        ><span>Jan.</span>
+                      </div>
+                    </div>
+                    <div class="fy-block fy-2027">
+                      <span class="fy-label">FY2027</span>
+                      <div class="fy-months">
+                        <span>Apr.</span><span>Jul.</span><span>Oct.</span
+                        ><span>Jan.</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="roadmap-grid">
+                    <!-- Phase 1 -->
+                    <div class="roadmap-phase">
+                      <div class="phase-sidebar">
+                        <div class="phase-num">1</div>
+                        <div class="phase-title">
+                          INTRODUCTION AND OPERATION OF UF60
+                        </div>
+                      </div>
+                      <div class="phase-timeline">
+                        <img
+                          src="images/uf60.png"
+                          alt="UF60 Roadmap"
+                          class="roadmap-img"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- Phase 2 -->
+                    <div class="roadmap-phase">
+                      <div class="phase-sidebar">
+                        <div class="phase-num">2</div>
+                        <div class="phase-title">
+                          UNDERGROUND SEEPAGE TANK SYSTEM (RUSTS)
+                        </div>
+                      </div>
+                      <div class="phase-timeline">
+                        <img
+                          src="images/dep.png"
+                          alt="UF60 Roadmap"
+                          class="roadmap-img"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- Phase 3 -->
+                    <div class="roadmap-phase">
+                      <div class="phase-sidebar">
+                        <div class="phase-num">3</div>
+                        <div class="phase-title">OUTCOME</div>
+                      </div>
+                      <div class="phase-timeline">
+                        <div class="outcome-box">
+                          <p>
+                            Maintaining water quality for a long time by
+                            inhibiting seepage due to the alkaline properties of
+                            Super Soil material.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="roadmap-footer">
+                    <div class="roadmap-insight">
+                      <p>
+                        <strong>INSIGHT:</strong> Roadmap focus on transition
+                        from manual operation to stabilized infrastructure
+                        (RUSTS) by FY2027.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="result-impact-section">
+                    <h4 class="result-impact-title">This would result in:</h4>
+
+                    <div class="result-impact-grid">
+                      <div class="result-impact-left">
+                        <ul class="main-benefits-list">
+                          <li>
+                            <span class="main-benefit-text"
+                              >Reduced wastewater load</span
+                            >
+                            <ul class="sub-benefits-list">
+                              <li>
+                                <svg
+                                  class="check-icon"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                >
+                                  <path
+                                    d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+                                  ></path>
+                                  <polyline
+                                    points="22 4 12 14.01 9 11.01"
+                                  ></polyline>
+                                </svg>
+                                <span
+                                  >Reduced use of chemical detergents (e.g.,
+                                  &frac23; reduction)</span
+                                >
+                              </li>
+                              <li>
+                                <svg
+                                  class="check-icon"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                >
+                                  <path
+                                    d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+                                  ></path>
+                                  <polyline
+                                    points="22 4 12 14.01 9 11.01"
+                                  ></polyline>
+                                </svg>
+                                <span>Reduced BOD</span>
+                              </li>
+                              <li>
+                                <svg
+                                  class="check-icon"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                >
+                                  <path
+                                    d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+                                  ></path>
+                                  <polyline
+                                    points="22 4 12 14.01 9 11.01"
+                                  ></polyline>
+                                </svg>
+                                <span>Reduced COD</span>
+                              </li>
+                              <li>
+                                <svg
+                                  class="check-icon"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                >
+                                  <path
+                                    d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+                                  ></path>
+                                  <polyline
+                                    points="22 4 12 14.01 9 11.01"
+                                  ></polyline>
+                                </svg>
+                                <span>Reduced surfactants</span>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <span class="main-benefit-text"
+                              >Roof structure seen from above</span
+                            >
+                            <div class="roof-image-container">
+                              <img
+                                src="images/roof.png"
+                                alt="Roof structure 10m x 5m"
+                                class="roof-image"
+                              />
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="result-impact-right">
+                        <div class="system-image-container">
+                          <img
+                            src="images/sol.png"
+                            alt="Underground Rainwater Storage System"
+                            class="system-image"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="model-test-section">
+                    <h4 class="test-title">
+                      Minimum model test of rainwater underground storage tanks
+                      with Super Sol Tested in Japan
+                    </h4>
+
+                    <div class="test-table-wrapper">
+                      <table class="test-data-table">
+                        <thead>
+                          <tr>
+                            <th>Category</th>
+                            <th>Item</th>
+                            <th>After 3 Days</th>
+                            <th>After 1 Month</th>
+                            <th>After 2 Months</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td rowspan="2" class="category-cell">Super Sol</td>
+                            <td>Appearance</td>
+                            <td>Colorless & Transparent</td>
+                            <td>Colorless & Transparent</td>
+                            <td>Colorless & Transparent</td>
+                          </tr>
+                          <tr>
+                            <td>E. coli (CFU/mL)</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>2</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2" class="category-cell">
+                              Rainwater Only
+                            </td>
+                            <td>Appearance</td>
+                            <td>Colorless & Transparent</td>
+                            <td>Colorless & Transparent</td>
+                            <td>Colorless & Transparent</td>
+                          </tr>
+                          <tr>
+                            <td>E. coli (CFU/mL)</td>
+                            <td>0</td>
+                            <td>55</td>
+                            <td>78</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="test-methodology">
+                      <div class="method-block">
+                        <h5>Experimental Method</h5>
+                        <p>
+                          Rainwater was added to a container with Super Sol and
+                          buried underground.<br />For comparison, a control
+                          sample containing only rainwater (without Super Sol)
+                          was also buried underground.
+                        </p>
+                      </div>
+                      <div class="method-block">
+                        <h5>Observation Period</h5>
+                        <p>
+                          Water quality was periodically analyzed over time.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="super-sol-projects-spacing"
+                    style="height: 60px"
+                  ></div>
+
+                  <div class="installation-correlation-section">
+                    <h4 class="correlation-title">
+                      Installation Correlation Diagram
+                    </h4>
+                    <p class="correlation-subtitle">
+                      Location of rainwater underground storage system, location
+                      of UF60 and transport route.
+                    </p>
+                    <div class="correlation-image-container">
+                      <img
+                        src="images/illustration.png"
+                        alt="Installation correlation diagram"
+                        class="correlation-image"
+                      />
+                    </div>
+                  </div>
+
+                  <div
+                    class="super-sol-projects-spacing"
+                    style="height: 60px"
+                  ></div>
+
+                  <div class="water-quality-improvement-section">
+                    <h4 class="water-quality-title">
+                      Direct water quality improvement by Super Sol of Estero
+                    </h4>
+                    <p class="water-quality-subtitle">
+                      How to use photocatalytic Super Sol and sewage filter
+                      design in Super Sol estero
+                    </p>
+
+                    <div class="water-quality-content">
+                      <p>
+                        In order to improve the current situation of Estero, as
+                        an effective measure, we would like to propose to
+                        improve sewage by using an artificial porous lightweight
+                        foam material (Super Sol) made from crushed, calcined,
+                        and foamed waste glass, which has been proven in Japan,
+                        as a filter. In addition, last year, a new Super Sol
+                        with a titanium dioxide photocatalyst was developed.
+                      </p>
+
+                      <ul class="water-quality-list">
+                        <li>
+                          I would like to propose a design proposal that uses
+                          ordinary Super Sol as a sewage filter to promote the
+                          purification of sewage, and as a final step, a
+                          photocatalyst Super Sol is placed at the outlet to the
+                          sea to attack E. coli.
+                        </li>
+                        <li>
+                          Initial trials of the photocatalytic Super Sol
+                          (Manila) showed a certain effect (BOD decreased from
+                          12 mg/L to 8 mg/L), but validation experiments are
+                          needed to obtain accurate effects under actual local
+                          conditions.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div
+                    class="super-sol-projects-spacing"
+                    style="height: 60px"
+                  ></div>
+
+                  <div class="bod-test-results-section">
+                    <h4 class="correlation-title">
+                      BOD (Biochemical Oxygen Demand)
+                    </h4>
+                    <p class="correlation-subtitle">Summary of Test Results</p>
+
+                    <div class="bod-table-wrapper">
+                      <table class="bod-data-table">
+                        <thead>
+                          <tr>
+                            <th>NO</th>
+                            <th>Sample Name</th>
+                            <th>Differentiate</th>
+                            <th>BOD (mg/L)</th>
+                            <th>Rating</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Open Canal</td>
+                            <td>Same-day inspection</td>
+                            <td><strong>711</strong></td>
+                            <td>Sewage Level (extreme pollution)</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Estero-A<br />Using Photocatalyst Super Sol</td>
+                            <td>Photocatalyst Super Sol is used</td>
+                            <td><strong>12</strong></td>
+                            <td>Good</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>Estero-A'<br />No Photocatalyst Super Sol</td>
+                            <td>3 weeks in an experimental environment</td>
+                            <td><strong>33</strong></td>
+                            <td>Significant Improvement</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>
+                              MLA Water-B<br />Using Photocatalyst Super Sol
+                            </td>
+                            <td>After treatment<br />(Water System B)</td>
+                            <td><strong>12</strong></td>
+                            <td>Good</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>
+                              MLA Water-B'<br />No Photocatalyst Super Sol
+                            </td>
+                            <td>3 weeks in an experimental environment</td>
+                            <td><strong>12</strong></td>
+                            <td>Stable</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="bod-test-description">
+                      <p>
+                        The test began with a sample collection on Friday, March
+                        20th.Intertek took the test water back on March 30th.On
+                        April 6th, they took Sample A back along with the Estero
+                        wastewater sample for BOD testing.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="super-sol-projects-spacing"
+                    style="height: 60px"
+                  ></div>
+
+                  <div class="estero-system-section">
+                    <h4 class="correlation-title">
+                      Estero's Super Sol Purification System Design
+                    </h4>
+                    <p class="correlation-subtitle">
+                      By using e-WASH, you can expect to reduce the use of
+                      synthetic detergents by two-thirds and further inhibit the
+                      growth of organic matter.
+                    </p>
+                    <div class="correlation-image-container">
+                      <img
+                        src="images/estero.png"
+                        alt="Estero's Super Sol Purification System Design"
+                        class="correlation-image"
+                      />
+                    </div>
+
+                    <div class="estero-description-box">
+                      <p>
+                        We will create a mechanism for the reservoir to maximize
+                        contact between the photocatalyst Super Sol and the
+                        water surface.
+                      </p>
+                      <p>Specifically,</p>
+                      <ul>
+                        <li>
+                          Install a photocatalyst Super Sol wrapped in a net to
+                          match the width of the estero.
+                        </li>
+                        <li>
+                          The size of the net should be designed with
+                          maintainability and safety in mind.
+                        </li>
+                        <li>
+                          The installation method is to erect supports at the
+                          four corners and connect the photocatalyst Super Sol
+                          so that it can be moved.
+                        </li>
+                        <li>
+                          The photocatalyst Super Sol is an L2 type, so it has
+                          the characteristic of floating on the surface of the
+                          water. Constantly floating on the surface of the water
+                          and in contact with the water of the estero.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div
+                    class="super-sol-projects-spacing"
+                    style="height: 60px"
+                  ></div>
+
+                  <div class="three-stage-tank-section">
+                    <h4 class="correlation-title">
+                      Three-stage tank purification model blueprint for Super
+                      Sol (porous lightweight firing material)
+                    </h4>
+                    <p class="correlation-subtitle"></p>
+                    <div class="correlation-image-container">
+                      <img
+                        src="images/site.png"
+                        alt="Three-stage tank purification model blueprint for Super Sol"
+                        class="correlation-image"
+                      />
+                    </div>
+
+                    <div class="capacity-calculation-grid">
+                      <div class="capacity-box">
+                        <h5 class="capacity-box-letter">A</h5>
+                        <div class="capacity-box-content">
+                          <h6>
+                            Calculation of capacity of primary, secondary, and
+                            tertiary tanks
+                          </h6>
+                          <ul>
+                            <li>
+                              1 slot (Primary Super Sol : L4)<br />
+                              10m &times; 10m &times; 1.5m = 150 m&sup3;
+                            </li>
+                            <li>
+                              2 slot (Primary Super Sol : L3)<br />
+                              10m &times; 15m &times; 1.5m = 225 m&sup3;
+                            </li>
+                            <li>
+                              3 slot (Photocatalyst Super Sol: L2)<br />
+                              30m &times; 25m &times; 1.5m 1186.5m&sup3;
+                            </li>
+                          </ul>
+                          <p class="capacity-box-note">
+                            "Pre-treatment + organic matter<br />load reduction
+                            zone"
+                          </p>
+                        </div>
+                      </div>
+                      <div class="capacity-box">
+                        <h5 class="capacity-box-letter">B</h5>
+                        <div class="capacity-box-content">
+                          <h6>
+                            Calculation of capacity of 1 slot, 2 slot , 3 slot
+                            and 4 slot
+                          </h6>
+                          <ul>
+                            <li>
+                              1 slot (Primary Super Sol : L4)<br />
+                              10m &times; 10m &times; 1.5m = 150 m&sup3;
+                            </li>
+                            <li>
+                              2 slot (Primary Super Sol : L3)<br />
+                              10m &times; 15m &times; 1.5m = 225 m&sup3;
+                            </li>
+                            <li>
+                              3 slot (Super Sol : L2) 29m &times;<br />
+                              19m &times; 1.5m = 826.5 m&sup3;
+                            </li>
+                            <li>
+                              4 slot 24m &times; 10m &times; 1.5m = 360 m&sup3;
+                            </li>
+                          </ul>
+                          <p class="capacity-box-note">
+                            "Pre-treatment + organic matter<br />load reduction
+                            zone"
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    
+
+
+                    </div>
+                  </div>
+                </div>
+                <!-- roadmap-section -->
+              </div>
+              <!-- super-sol-applications-inner -->
+            </div>
+            <!-- super-sol-applications -->
+          </div>
+          <!-- portfolio-panel supersol -->
+        </div>
+        <!-- section-inner -->
+
+        <div class="section-inner" data-ewash-only>
+          <h2 class="features-title">FEATURES OF <span>e-WASH</span></h2>
+
+          <div class="features-new-grid" aria-label="e-WASH Features">
+            <div class="feature-item-card">
+              <div class="feature-item-img-box">
+                <img src="images/hss.png" alt="High Safety Standard" />
+              </div>
+              <h3 class="feature-item-title">High Safety Standard</h3>
+              <a href="feature-safety.html" class="feature-item-btn"
+                >Learn more</a
+              >
+            </div>
+
+            <div class="feature-item-card">
+              <div class="feature-item-img-box">
+                <img src="images/rp.png" alt="High Rust Prevention Effect" />
+              </div>
+              <h3 class="feature-item-title">High Rust Prevention Effect</h3>
+              <a href="feature-rust-prevention.html" class="feature-item-btn"
+                >Learn more</a
+              >
+            </div>
+
+            <div class="feature-item-card">
+              <div class="feature-item-img-box">
+                <img src="images/as.png" alt="High Sterilization Effect" />
+              </div>
+              <h3 class="feature-item-title">High Sterilization Effect</h3>
+              <a href="feature-sterilization.html" class="feature-item-btn"
+                >Learn more</a
+              >
+            </div>
+
+            <div class="feature-item-card">
+              <div class="feature-item-img-box">
+                <img src="images/ed.png" alt="Excellent Detergency" />
+              </div>
+              <h3 class="feature-item-title">Excellent Detergency</h3>
+              <a href="feature-detergency.html" class="feature-item-btn"
+                >Learn more</a
+              >
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    </div>
-  </div>
+      <div id="carousel" class="carousel-section" data-ewash-only>
+        <div class="water-container">
+          <div class="content-wrapper">
+            <div class="description-box">
+              <div class="desc-content">
+                <img
+                  id="desc-image"
+                  src="images/r1.png"
+                  alt="Performance 1: Cleaning Ability"
+                  class="desc-image"
+                />
+              </div>
+            </div>
 
-  <div class="section-inner" data-ewash-only>
-    <h2 class="features-title">
-      FEATURES OF <span>e-WASH</span>
-    </h2>
-
-    <div class="features-new-grid" aria-label="e-WASH Features">
-      <div class="feature-item-card">
-        <div class="feature-item-img-box">
-          <img src="images/hss.png" alt="High Safety Standard" />
-        </div>
-        <h3 class="feature-item-title">High Safety Standard</h3>
-        <a href="feature-safety.html" class="feature-item-btn">Learn more</a>
-      </div>
-
-      <div class="feature-item-card">
-        <div class="feature-item-img-box">
-          <img src="images/rp.png" alt="High Rust Prevention Effect" />
-        </div>
-        <h3 class="feature-item-title">High Rust Prevention Effect</h3>
-        <a href="feature-rust-prevention.html" class="feature-item-btn">Learn more</a>
-      </div>
-
-      <div class="feature-item-card">
-        <div class="feature-item-img-box">
-          <img src="images/as.png" alt="High Sterilization Effect" />
-        </div>
-        <h3 class="feature-item-title">High Sterilization Effect</h3>
-        <a href="feature-sterilization.html" class="feature-item-btn">Learn more</a>
-      </div>
-
-      <div class="feature-item-card">
-        <div class="feature-item-img-box">
-          <img src="images/ed.png" alt="Excellent Detergency" />
-        </div>
-        <h3 class="feature-item-title">Excellent Detergency</h3>
-        <a href="feature-detergency.html" class="feature-item-btn">Learn more</a>
-      </div>
-    </div>
-  </div>
-
-  </div>
-
-  <div id="carousel" class="carousel-section" data-ewash-only>
-    <div class="water-container">
-      <div class="content-wrapper">
-        <div class="description-box">
-          <div class="desc-content">
-            <img
-              id="desc-image"
-              src="images/r1.png"
-              alt="Performance 1: Cleaning Ability"
-              class="desc-image"
-            />
+            <div class="perf-tabs">
+              <button class="perf-tab-btn active" data-index="0">
+                Characteristics
+              </button>
+              <button class="perf-tab-btn" data-index="1">Functions</button>
+              <button class="perf-tab-btn" data-index="2">Abilities</button>
+              <button class="perf-tab-btn" data-index="3">Values</button>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="perf-tabs">
-          <button class="perf-tab-btn active" data-index="0">Characteristics</button>
-          <button class="perf-tab-btn" data-index="1">Functions</button>
-          <button class="perf-tab-btn" data-index="2">Abilities</button>
-          <button class="perf-tab-btn" data-index="3">Values</button>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <div class="footer-contact">
+            <div class="footer-brand">e-WASH</div>
+            <span>Phone: 0935-197-2829</span>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=airene.c@mirae-design.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >airene.c@mirae-design.com</a
+            >
+          </div>
+        </div>
+        <div class="footer-social">
+          <a
+            href="https://www.facebook.com/MIRAe.DESIGN.JAPAN"
+            class="footer-icon"
+            aria-label="Visit our Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/fb.png" alt="Facebook" />
+          </a>
+          <a
+            href="https://www.instagram.com/mirae.design.ph?fbclid=IwY2xjawQl6D1leHRuA2FlbQIxMABicmlkETFOQWlsSWhPb2hTTlRBcU82c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHvS0z87nFlGZf5T2mRyqgn2NmA91jjtI5BiFqsgjlblkdGImFhO2hSkT0ZhU_aem_HMOxxA1_hFs1rDboID_Mbg"
+            class="footer-icon"
+            aria-label="Visit our Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/ig.png" alt="Instagram" />
+          </a>
+        </div>
+        <div class="footer-bottom">
+          &copy; <span id="year"></span> e-WASH. All rights reserved.
         </div>
       </div>
-    </div>
-  </div>
+    </footer>
 
-</section>
-
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-left">
-      <div class="footer-contact">
-        <div class="footer-brand">e-WASH</div>
-        <span>Phone: 0935-197-2829</span>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=airene.c@mirae-design.com" target="_blank" rel="noopener noreferrer">airene.c@mirae-design.com</a>
-      </div>
-    </div>
-    <div class="footer-social">
-      <a href="https://www.facebook.com/MIRAe.DESIGN.JAPAN" class="footer-icon" aria-label="Visit our Facebook" target="_blank" rel="noopener noreferrer">
-        <img src="images/fb.png" alt="Facebook" />
-      </a>
-      <a href="https://www.instagram.com/mirae.design.ph?fbclid=IwY2xjawQl6D1leHRuA2FlbQIxMABicmlkETFOQWlsSWhPb2hTTlRBcU82c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHvS0z87nFlGZf5T2mRyqgn2NmA91jjtI5BiFqsgjlblkdGImFhO2hSkT0ZhU_aem_HMOxxA1_hFs1rDboID_Mbg" class="footer-icon" aria-label="Visit our Instagram" target="_blank" rel="noopener noreferrer">
-        <img src="images/ig.png" alt="Instagram" />
-      </a>
-    </div>
-    <div class="footer-bottom">
-      &copy; <span id="year"></span> e-WASH. All rights reserved.
-    </div>
-  </div>
-</footer>
-
-<script src="js/carousel.js"></script>
-<script src="js/main.js"></script>
-
+    <script src="js/carousel.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
-

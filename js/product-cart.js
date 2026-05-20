@@ -159,6 +159,41 @@
     });
   });
 
+  // Buy Now button behavior: capture product data and redirect to buy-now page
+  var buyNowButtons = Array.prototype.slice.call(document.querySelectorAll(".buy-now-btn"));
+  buyNowButtons.forEach(function (bbtn) {
+    bbtn.addEventListener("click", function () {
+      var sibling = bbtn.parentElement && bbtn.parentElement.querySelector(".cart-btn");
+      var payload = sibling ? getPayloadFromBtn(sibling) : { id: "unknown", name: "Product", size: "", unitPrice: 0, image: "" };
+      var buyNowItem = {
+        id: payload.id,
+        name: payload.name,
+        size: payload.size,
+        unitPrice: payload.unitPrice,
+        image: payload.image,
+        qty: 1,
+      };
+      try {
+        sessionStorage.setItem("buyNowPayload", JSON.stringify(buyNowItem));
+      } catch (e) {
+        console.warn('Could not save buyNowPayload', e);
+      }
+      window.location.href = "buy-now.html";
+    });
+  });
+
+  // Checkout from cart panel -> go to buy-now with full cart
+  cartCheckoutBtn &&
+    cartCheckoutBtn.addEventListener("click", function () {
+      var entries = Array.from(cart.values());
+      try {
+        sessionStorage.setItem("buyNowCart", JSON.stringify(entries));
+      } catch (e) {
+        console.warn('Could not save buyNowCart', e);
+      }
+      window.location.href = "buy-now.html";
+    });
+
   function prefersReducedMotion() {
     return window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   }
@@ -268,12 +303,12 @@ const data = [
     {
         number: "2",
         title: "Living Room and Bedroom",
-        image: "images/20.png" // placeholder
+        image: "images/20.jpg" // placeholder
     },
     {
         number: "3",
         title: "Bathroom and Toilet Room",
-        image: "images/21.png" // placeholder
+        image: "images/21.jpg" // placeholder
     },
     {
         number: "4",

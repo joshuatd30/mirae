@@ -165,7 +165,7 @@ body {
 }
 
 .thumb-sanitize {
-  background-image: url("images/disinfect.png");
+  background-image: url("images/disinfect.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -176,7 +176,7 @@ body {
 }
 
 .thumb-deodorant {
-  background-image: url("images/anaerobic.jpg");
+  background-image: url("images/fabrics.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

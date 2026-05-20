@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-WASH | Data</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="buy-now.css" />
+    <link rel="stylesheet" href="data.css?v=20260415-test-title-center" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="data-page">
+    <header class="top-nav">
+      <div class="logo-area">
+        <a href="index.html">
+          <img
+            src="images/MD.png"
+            alt="e-WASH powered by MIRAE"
+            class="logo-img"
+          />
+        </a>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <div class="nav-dropdown">
+          <a href="product.html" class="nav-dropdown-trigger">PRODUCT</a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="product.html">e-WASH</a></li>
+            <li><a href="super-sol.html">Super Sol</a></li>
+          </ul>
+        </div>
+        <a href="data.html">Data</a>
+        <a href="about.html">About Us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contacts</a>
+      </nav>
+    </header>
+
+    <main class="buy-now-container">
+      <a class="back-to-shop" href="product.html">&larr; Back to Shop</a>
+      <h1 class="buy-now-title">Buy Now</h1>
+      <p class="buy-now-sub">Review your items and complete your purchase</p>
+
+      <div class="buy-now-grid">
+        <section class="product-column">
+          <div class="product-card">
+            <div class="product-left">
+              <img id="product-image" src="images/pr1.png" alt="Product" />
+            </div>
+            <div class="product-right">
+              <h2 id="product-name">Product Name</h2>
+              <div id="product-size" class="product-size">250ml</div>
+              <div id="product-price" class="product-price">PHP 0.00</div>
+              <p id="product-desc" class="product-desc">
+                Product description goes here.
+              </p>
+
+              <div class="qty-row">
+                <button id="qty-decr" type="button">-</button>
+                <input id="qty-input" type="number" value="1" min="1" />
+                <button id="qty-incr" type="button">+</button>
+              </div>
+              <button id="remove-item" class="remove-link">Remove</button>
+            </div>
+          </div>
+
+          <div class="benefits-row">
+            <div class="benefit">
+              <div class="benefit-icon-wrapper">
+                <img src="images/ef.png" alt="Eco-Friendly" />
+              </div>
+              <div class="benefit-label">Eco-Friendly</div>
+            </div>
+            <div class="benefit">
+              <div class="benefit-icon-wrapper">
+                <img src="images/tq.png" alt="Trusted Quality" />
+              </div>
+              <div class="benefit-label">Trusted Quality</div>
+            </div>
+            <div class="benefit">
+              <div class="benefit-icon-wrapper">
+                <img src="images/aw.png" alt="Alkaline Power" />
+              </div>
+              <div class="benefit-label">Alkaline Power</div>
+            </div>
+          </div>
+        </section>
+
+        <aside class="summary-column">
+          <div class="payment-box">
+            <h3>Payment Method</h3>
+            <label class="pm">
+              <input type="radio" name="pmethod" value="cod" checked />
+              Cash on Delivery
+              <div class="pm-desc">Pay when your order is delivered</div>
+            </label>
+            <label class="pm">
+              <input type="radio" name="pmethod" value="gcash" />
+              GCash
+              <div class="pm-desc">Pay securely using your GCash account</div>
+            </label>
+            <label class="pm">
+              <input type="radio" name="pmethod" value="card" />
+              Credit / Debit Card
+              <div class="pm-desc">Visa, Mastercard, or JCB</div>
+            </label>
+          </div>
+
+          <div class="order-box">
+            <h3>Order Summary</h3>
+            <div class="summary-line">
+              <span>Subtotal</span><span id="summary-sub">PHP 0.00</span>
+            </div>
+            <div class="summary-line">
+              <span>Shipping Fee</span
+              ><span id="summary-shipping">PHP 50.00</span>
+            </div>
+            <div class="summary-total">
+              <span>Total</span><span id="summary-total">PHP 0.00</span>
+            </div>
+            <button id="place-order" class="place-order-btn">
+              Place Order
+            </button>
+            <div class="secure-note">Your payment is secure and encrypted</div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <div class="footer-contact">
+            <div class="footer-brand">e-WASH</div>
+            <span>Phone: 0935-197-2829</span>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=airene.c@mirae-design.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >airene.c@mirae-design.com</a
+            >
+          </div>
+        </div>
+        <div class="footer-social">
+          <a
+            href="https://www.facebook.com/MIRAe.DESIGN.JAPAN"
+            class="footer-icon"
+            aria-label="Visit our Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/fb.png" alt="Facebook" />
+          </a>
+          <a
+            href="https://www.instagram.com/mirae.design.ph?fbclid=IwY2xjawQl6D1leHRuA2FlbQIxMABicmlkETFOQWlsSWhPb2hTTlRBcU82c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHvS0z87nFlGZf5T2mRyqgn2NmA91jjtI5BiFqsgjlblkdGImFhO2hSkT0ZhU_aem_HMOxxA1_hFs1rDboID_Mbg"
+            class="footer-icon"
+            aria-label="Visit our Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/ig.png" alt="Instagram" />
+          </a>
+        </div>
+        <div class="footer-bottom">
+          &copy; <span id="year"></span> e-WASH. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function formatPHP(amount) {
+        return "PHP " + (Number(amount) || 0).toFixed(2);
+      }
+
+      var payload = null;
+      try {
+        var single = sessionStorage.getItem("buyNowPayload");
+        var cart = sessionStorage.getItem("buyNowCart");
+        if (cart) {
+          var entries = JSON.parse(cart);
+
+          if (entries && entries.length) {
+            payload = entries[0];
+            var subtotal = entries.reduce(function (sum, item) {
+              return sum + (item.unitPrice || 0) * (item.qty || 1);
+            }, 0);
+            document.getElementById("summary-sub").textContent =
+              formatPHP(subtotal);
+            document.getElementById("summary-total").textContent = formatPHP(
+              subtotal + 50,
+            );
+          }
+        } else if (single) {
+          payload = JSON.parse(single);
+          var subtotal = (payload.unitPrice || 0) * (payload.qty || 1);
+          document.getElementById("summary-sub").textContent =
+            formatPHP(subtotal);
+          document.getElementById("summary-total").textContent = formatPHP(
+            subtotal + 50,
+          );
+        }
+      } catch (e) {
+        console.warn(e);
+      }
+
+      if (payload) {
+        document.getElementById("product-name").textContent =
+          payload.name || "Product";
+        document.getElementById("product-price").textContent = formatPHP(
+          payload.unitPrice || 0,
+        );
+        document.getElementById("product-image").src =
+          payload.image || "images/pr1.png";
+      }
+
+      // quantity controls
+      var qtyInput = document.getElementById("qty-input");
+      document
+        .getElementById("qty-decr")
+        .addEventListener("click", function () {
+          qtyInput.value = Math.max(1, Number(qtyInput.value) - 1);
+          updateSummary();
+        });
+      document
+        .getElementById("qty-incr")
+        .addEventListener("click", function () {
+          qtyInput.value = Math.max(1, Number(qtyInput.value) + 1);
+          updateSummary();
+        });
+
+      function updateSummary() {
+        var qty = Number(qtyInput.value) || 1;
+        var unit = payload ? payload.unitPrice || 0 : 0;
+        var sub = qty * unit;
+        document.getElementById("summary-sub").textContent = formatPHP(sub);
+        document.getElementById("summary-total").textContent = formatPHP(
+          sub + 50,
+        );
+      }
+
+      document
+        .getElementById("place-order")
+        .addEventListener("click", function () {
+          alert("Order placed. (This is a demo page)");
+
+          try {
+            sessionStorage.removeItem("buyNowPayload");
+            sessionStorage.removeItem("buyNowCart");
+          } catch (e) {}
+          window.location.href = "index.html";
+        });
+
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

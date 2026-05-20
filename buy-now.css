@@ -1,0 +1,335 @@
+/* =========================================
+   Base Styles
+   ========================================= */
+body.buy-now-page {
+  font-family: 'Poppins', sans-serif;
+  color: #14221f;
+  background: #fff;
+}
+
+/* =========================================
+   Navigation
+   ========================================= */
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo-img {
+  height: 36px;
+}
+
+/* =========================================
+   Layout & Container
+   ========================================= */
+.buy-now-container {
+  max-width: 1100px;
+  margin: 28px auto;
+  padding: 0 20px;
+}
+
+.back-to-shop {
+  display: inline-block;
+  color: #2f7a5a;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.buy-now-title {
+  font-size: 28px;
+  margin: 8px 0;
+}
+
+.buy-now-sub {
+  color: #6b6b6b;
+  margin-bottom: 18px;
+}
+
+.buy-now-grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 24px;
+}
+
+/* =========================================
+   Product Section
+   ========================================= */
+.product-card {
+  background: #fff;
+  border: 1px solid #e3efe6;
+  border-radius: 12px; /* Matching the right side */
+  padding: 32px;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  min-height: 420px; /* Extending the height to match the summary column footprint */
+}
+
+.product-left img {
+  width: 220px; /* Slightly larger image */
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-left img {
+  transform: scale(1.04);
+}
+
+.product-right {
+  flex: 1;
+}
+
+.product-name {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  color: #113822;
+}
+
+.product-size {
+  font-size: 19px;
+  color: #6b6b6b;
+  margin-bottom: 15px;
+}
+
+.product-price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #113822;
+  margin: 15px 0;
+}
+
+.product-desc {
+  font-size: 16px;
+  color: #6b6b6b;
+  line-height: 1.65;
+  margin-bottom: 24px;
+}
+
+/* Quantity Row */
+.qty-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.qty-row button {
+  background: #f2f6f3;
+  border: 1px solid #dfeee4;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.qty-row button:hover {
+  background: #e3efe6;
+  border-color: #2f7a5a;
+}
+
+.qty-row input {
+  width: 68px;
+  height: 48px;
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #e3efe6;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.remove-link {
+  background: none;
+  border: none;
+  color: #2f7a5a;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0;
+}
+
+.remove-link:hover {
+  text-decoration: underline;
+  color: #d9534f;
+}
+
+/* =========================================
+   Benefits Section
+   ========================================= */
+.benefits-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  gap: 10px;
+}
+
+.benefit {
+  flex: 1;
+  background: #f6fbf7;
+  border-radius: 12px;
+  padding: 16px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.benefit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.benefit-icon-wrapper {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.benefit-icon-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.benefit:hover .benefit-icon-wrapper img {
+  transform: scale(1.05);
+}
+
+.benefit-label {
+  font-weight: 500;
+  color: #113822;
+  line-height: 1.2;
+}
+
+/* =========================================
+   Summary Column
+   ========================================= */
+.summary-column .payment-box,
+.summary-column .order-box {
+  background: #fff;
+  border: 1px solid #e3efe6;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 14px;
+}
+
+.summary-column h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #113822;
+}
+
+/* Payment Method */
+.pm {
+  display: block;
+  border: 1px solid #e9f3ec;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.pm:hover {
+  border-color: #2f7a5a;
+}
+
+.pm input[type="radio"] {
+  margin-right: 8px;
+}
+
+.pm-desc {
+  font-size: 12px;
+  color: #6b6b6b;
+  margin-top: 6px;
+  margin-left: 24px;
+}
+
+/* Order Summary */
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 14px;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.place-order-btn {
+  background: #2e7a58;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 16px;
+  transition: background 0.2s;
+}
+
+.place-order-btn:hover {
+  background: #245e44;
+}
+
+.secure-note {
+  font-size: 12px;
+  color: #6b6b6b;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* =========================================
+   Footer
+   ========================================= */
+.site-footer {
+  margin-top: 36px;
+  padding: 24px 40px;
+  background: transparent;
+}
+
+/* =========================================
+   Responsive Design
+   ========================================= */
+@media (max-width: 900px) {
+  .buy-now-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .summary-column {
+    order: 2;
+  }
+  
+  .top-nav {
+    padding: 15px 20px;
+  }
+  
+  .product-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
