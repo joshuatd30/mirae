@@ -3,9 +3,7 @@
         { src: "images/rt1.png", alt: "e-WASH Characteristics" },
         { src: "images/rt2.png", alt: "e-WASH Functions" },
         { src: "images/rt3.png", alt: "e-WASH Abilities" },
-        { src: "images/rt4.png", alt: "e-WASH Core Values" },
-        { src: "images/EI.png", alt: "Environmental Impact" },
-        { src: "images/DES.png", alt: "DESEI Model" }
+        { src: "images/rt4.png", alt: "e-WASH Core Values" }
     ];
 
     const tabs = document.querySelectorAll('.perf-tab-btn');
