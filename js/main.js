@@ -13,7 +13,7 @@
   var visualLayers = Array.prototype.slice.call(
     root.querySelectorAll("[data-hero-visual-layer]")
   );
-  if (brandLayers.length !== 2 || visualLayers.length !== 2) return;
+  if (brandLayers.length !== 3 || visualLayers.length !== 3) return;
 
   var reduceMotion =
     window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -43,7 +43,7 @@
     if (busy || next === i) return;
     busy = true;
 
-    var prev = 1 - next;
+    var prev = i;
     var bLeave = brandLayers[prev];
     var bEnter = brandLayers[next];
     var vLeave = visualLayers[prev];
@@ -72,7 +72,7 @@
     bEnter.classList.remove("is-off");
     vEnter.classList.remove("is-off");
 
-    if (next === 1) {
+    if (next > prev) {
       bEnter.classList.add("prep-from-right");
       vEnter.classList.add("prep-from-left");
     } else {
@@ -99,7 +99,7 @@
 
   function tick() {
     if (document.hidden) return;
-    goTo((i + 1) % 2);
+    goTo((i + 1) % 3);
   }
 
   setInterval(tick, intervalMs);

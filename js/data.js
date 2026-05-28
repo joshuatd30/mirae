@@ -373,6 +373,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "images/6.png",
     "images/7.png",
     "images/8.png",
+    "images/DES.png",
+    "images/EI.png",
   ];
 
   let currentTrialIndex = 0;

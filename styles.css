@@ -1833,8 +1833,8 @@ body.super-sol-page .super-sol-applications {
 .desei-logo-abs {
   position: absolute;
   top: 2rem;
-  right: 2rem;
-  width: 280px;
+  right: -1rem;
+  width: 380px;
 }
 
 .desei-logo-img {
@@ -1845,7 +1845,7 @@ body.super-sol-page .super-sol-applications {
 
 .desei-content {
   text-align: left;
-  max-width: 60%; /* Leave space for logo on large screens */
+  max-width: 50%;
 }
 
 .desei-title {
