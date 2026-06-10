@@ -308,6 +308,8 @@ body > main.section {
     .container {
         height: auto;
         scroll-snap-align: none;
+        margin-top: 0;
+        padding-top: 24px;
         padding-bottom: 40px;
     }
 
@@ -346,7 +348,7 @@ body > main.section {
     .text-column {
         width: 100%;
         margin-left: 0;
-        margin-top: -50px;
+        margin-top: 0;
         padding: 0 10px;
     }
 
@@ -539,6 +541,7 @@ body > main.section {
     left: 5%;
     width: 40%;
     height: 80%;
+    object-position: center center;
     border-radius: 20px;
     border: 5px solid rgba(var(--green-rgb), 0.9);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
@@ -638,17 +641,20 @@ body > main.section {
     }
 
     .team-card.active .card-image {
-        top: 5%;
+        top: 4%;
         left: 50%;
         transform: translateX(-50%);
-        width: 80%;
-        height: 45%;
+        width: 82%;
+        height: 52%;
+        object-fit: contain;
+        object-position: center center;
+        background: #ffffff;
     }
 
     .card-info {
         right: auto;
         left: 50%;
-        top: 55%;
+        top: 64%;
         width: 90%;
         transform: translateX(-50%) translateY(30px);
         text-align: center;
@@ -675,5 +681,100 @@ body > main.section {
 
     .vertical-title {
         font-size: 16px;
+    }
+}
+
+/* ============================================================
+   RESPONSIVE FIXES FOR ABOUT US PAGE
+   ============================================================ */
+@media (max-width: 1024px) {
+    .content-grid {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+        gap: 40px;
+    }
+
+    .image-column {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+    }
+
+    .image-column img {
+        margin-left: 0;
+        max-height: 400px;
+    }
+
+    .text-column {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .mv-section {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .mv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .objectives-mindmap {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .mindmap-center::after {
+        display: none;
+    }
+
+    .mindmap-branches::before {
+        display: none;
+    }
+
+    .branch-item {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .branch-connector {
+        display: none;
+    }
+
+    .objectives-section {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+        min-height: 100vh;
+        margin-top: 0;
+        padding-top: 32px;
+    }
+
+    body > main.section {
+        padding-top: 1rem;
+    }
+
+    .team-container {
+        height: 78vh;
+        min-height: 650px;
+    }
+
+    .info-box {
+        padding: 20px;
+    }
+
+    .mv-card {
+        padding: 20px;
+    }
+
+    .center-box {
+        width: 100%;
+        max-width: 320px;
+        height: 400px;
     }
 }

@@ -29,7 +29,11 @@
           />
         </a>
       </div>
+            <button class="hamburger" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+        <span></span><span></span><span></span>
+      </button>
       <nav class="nav-links">
+
         <a href="index.html">Home</a>
         <div class="nav-dropdown">
           <a href="product.html" class="active nav-dropdown-trigger">PRODUCT</a>
@@ -38,24 +42,35 @@
             <li><a href="super-sol.html">Super Sol</a></li>
           </ul>
         </div>
-        <a href="project.html">Project</a>
+        <a href="project.html">DESEI</a>
         <a href="data.html">Data</a>
         <a href="about.html">About Us</a>
         <a href="faq.html">FAQ</a>
         <a href="contact.html">Contacts</a>
-        <button
-          type="button"
-          class="cart-nav-btn"
-          id="cart-open-btn"
-          aria-label="Open cart"
-        >
-          <img src="images/cart.png" alt="" aria-hidden="true" />
-          <span class="cart-badge" id="cart-badge" aria-label="Cart items"
-            >0</span
-          >
-        </button>
+
       </nav>
     </header>
+
+    <!-- Mobile Nav Overlay & Drawer -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay" aria-hidden="true"></div>
+    <nav class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile navigation">
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation">&#x2715;</button>
+
+        <a href="index.html">Home</a>
+        <div class="nav-dropdown">
+          <a href="product.html" class="active nav-dropdown-trigger">PRODUCT</a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="product.html">e-WASH</a></li>
+            <li><a href="super-sol.html">Super Sol</a></li>
+          </ul>
+        </div>
+        <a href="project.html">DESEI</a>
+        <a href="data.html">Data</a>
+        <a href="about.html">About Us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contacts</a>
+
+    </nav>
 
     <main class="hero" id="ewash">
       <section class="hero-content">
@@ -119,24 +134,11 @@
           <div class="product-card glass">
             <img
               src="images/pr1.png"
-              alt="e-WASH Multipurpose Cleaner"
+              alt="eWash 250 ML"
               class="product-fg"
             />
             <div class="product-actions">
-              <p class="price">PHP 150.00</p>
-              <button type="button" class="buy-now-btn">Buy Now</button>
-              <button
-                type="button"
-                class="cart-btn"
-                aria-label="Add to cart"
-                data-cart-id="ewash-001"
-                data-cart-name="e-WASH Multipurpose Cleaner"
-                data-cart-size="Default"
-                data-cart-price="150"
-                data-cart-image="images/pr1.png"
-              >
-                <img src="images/cart.png" alt="Cart" />
-              </button>
+              <p class="variant-name">eWash 250 ML</p>
             </div>
           </div>
         </div>
@@ -144,25 +146,12 @@
         <div class="product">
           <div class="product-card glass">
             <img
-              src="images/pr1.png"
-              alt="e-WASH Multipurpose Cleaner"
+              src="images/pr500.png"
+              alt="eWash 500 ML"
               class="product-fg"
             />
             <div class="product-actions">
-              <p class="price">PHP 150.00</p>
-              <button type="button" class="buy-now-btn">Buy Now</button>
-              <button
-                type="button"
-                class="cart-btn"
-                aria-label="Add to cart"
-                data-cart-id="ewash-002"
-                data-cart-name="e-WASH Multipurpose Cleaner"
-                data-cart-size="Default"
-                data-cart-price="150"
-                data-cart-image="images/pr1.png"
-              >
-                <img src="images/cart.png" alt="Cart" />
-              </button>
+              <p class="variant-name">eWash 500 ML</p>
             </div>
           </div>
         </div>
@@ -170,25 +159,12 @@
         <div class="product">
           <div class="product-card glass">
             <img
-              src="images/pr1.png"
-              alt="e-WASH Multipurpose Cleaner"
+              src="images/1con.png"
+              alt="eWash 20 Liters"
               class="product-fg"
             />
             <div class="product-actions">
-              <p class="price">PHP 150.00</p>
-              <button type="button" class="buy-now-btn">Buy Now</button>
-              <button
-                type="button"
-                class="cart-btn"
-                aria-label="Add to cart"
-                data-cart-id="ewash-003"
-                data-cart-name="e-WASH Multipurpose Cleaner"
-                data-cart-size="Default"
-                data-cart-price="150"
-                data-cart-image="images/pr1.png"
-              >
-                <img src="images/cart.png" alt="Cart" />
-              </button>
+              <p class="variant-name">eWash 20 Liters</p>
             </div>
           </div>
         </div>
@@ -196,25 +172,12 @@
         <div class="product">
           <div class="product-card glass">
             <img
-              src="images/pr1.png"
-              alt="e-WASH Multipurpose Cleaner"
+              src="images/pouch.png"
+              alt="Refill Pouch"
               class="product-fg"
             />
             <div class="product-actions">
-              <p class="price">PHP 150.00</p>
-              <button type="button" class="buy-now-btn">Buy Now</button>
-              <button
-                type="button"
-                class="cart-btn"
-                aria-label="Add to cart"
-                data-cart-id="ewash-004"
-                data-cart-name="e-WASH Multipurpose Cleaner"
-                data-cart-size="Default"
-                data-cart-price="150"
-                data-cart-image="images/pr1.png"
-              >
-                <img src="images/cart.png" alt="Cart" />
-              </button>
+              <p class="variant-name">Refill Pouch</p>
             </div>
           </div>
         </div>
@@ -598,7 +561,7 @@
               <div class="situation-card">
                 <div class="card-image-box">
                   <img
-                    src="images/Accessories_clothes.jpg"
+                    src="images/Accessories_clothes.png"
                     alt="Accessories / Clothes"
                   />
                   <div class="card-overlay">
@@ -611,7 +574,7 @@
               <!-- Children -->
               <div class="situation-card">
                 <div class="card-image-box">
-                  <img src="images/children's_product.png" alt="Children" />
+                  <img src="images/bottles.png" alt="Children" />
                   <div class="card-overlay">
                     <span>CHILDREN'S<br />PRODUCT</span>
                   </div>
@@ -628,7 +591,7 @@
       <div class="footer-inner">
         <div class="footer-left">
           <div class="footer-contact">
-            <div class="footer-brand">e-WASH</div>
+            <div class="footer-brand">e-WASH . Super Sol . DESEI powered by MIRAE Design</div>
             <span>Phone: 0935-197-2829</span>
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=airene.c@mirae-design.com"
@@ -667,5 +630,6 @@
     <script src="js/main.js"></script>
 
     <script src="js/product-cart.js"></script>
+    <script src="js/mobile-nav.js"></script>
   </body>
 </html>

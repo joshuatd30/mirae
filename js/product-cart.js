@@ -298,7 +298,7 @@ const data = [
     {
         number: "1",
         title: "Cafe and Restaurants",
-        image: "images/19.png"
+        image: "images/19.jpg"
     },
     {
         number: "2",

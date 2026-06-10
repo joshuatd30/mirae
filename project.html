@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>e-WASH | DESEI</title>
     <link rel="stylesheet" href="styles.css?v=20260415-supersol-boxed-fix1" />
-    <link rel="stylesheet" href="product.css" />
+    <link rel="stylesheet" href="project.css?v=20260602" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="product-page super-sol-page project-page">
+  <body class="project-page">
     <header class="top-nav">
       <div class="logo-area">
         <a href="index.html">
@@ -29,7 +29,11 @@
           />
         </a>
       </div>
+            <button class="hamburger" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+        <span></span><span></span><span></span>
+      </button>
       <nav class="nav-links">
+
         <a href="index.html">Home</a>
         <div class="nav-dropdown">
           <a href="product.html" class="nav-dropdown-trigger">PRODUCT</a>
@@ -43,11 +47,33 @@
         <a href="about.html">About Us</a>
         <a href="faq.html">FAQ</a>
         <a href="contact.html">Contacts</a>
+      
       </nav>
     </header>
 
+    <!-- Mobile Nav Overlay & Drawer -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay" aria-hidden="true"></div>
+    <nav class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile navigation">
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation">&#x2715;</button>
+
+        <a href="index.html">Home</a>
+        <div class="nav-dropdown">
+          <a href="product.html" class="nav-dropdown-trigger">PRODUCT</a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="product.html">e-WASH</a></li>
+            <li><a href="super-sol.html">Super Sol</a></li>
+          </ul>
+        </div>
+        <a href="project.html" class="active">DESEI</a>
+        <a href="data.html">Data</a>
+        <a href="about.html">About Us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contacts</a>
+      
+    </nav>
+
     <main class="project-main-content">
-          <div class="super-sol-projects-spacing" style="height: 80px"></div>
+          <div class="project-spacer project-spacer--intro"></div>
 
           <div class="super-sol-applications" aria-label="Super Sol Projects">
             <div class="super-sol-applications-inner">
@@ -87,10 +113,7 @@
                 </div>
               </div>
 
-              <div
-                class="super-sol-projects-spacing"
-                style="height: 40px"
-              ></div>
+              <div class="project-spacer project-spacer--short"></div>
 
               <div class="proposal-outline-card">
                 <h4 class="proposal-outline-title">Proposal Outline</h4>
@@ -124,10 +147,7 @@
                 </div>
               </div>
 
-              <div
-                class="super-sol-projects-spacing"
-                style="height: 60px"
-              ></div>
+              <div class="project-spacer project-spacer--section"></div>
 
               <div class="model-definition-section">
                 <h4 class="proposal-outline-title">Model Definition</h4>
@@ -175,10 +195,7 @@
                 </div>
               </div>
 
-              <div
-                class="super-sol-projects-spacing"
-                style="height: 60px"
-              ></div>
+              <div class="project-spacer project-spacer--section"></div>
 
               <div class="daily-flow-section">
                 <h4 class="proposal-outline-title">Daily Operational Flow</h4>
@@ -233,10 +250,7 @@
                 </div>
               </div>
 
-              <div
-                class="super-sol-projects-spacing"
-                style="height: 60px"
-              ></div>
+              <div class="project-spacer project-spacer--section"></div>
 
               <div class="uf60-logic-section">
                 <h4 class="proposal-outline-title">UF60 Treatment Logic</h4>
@@ -299,7 +313,7 @@
       <div class="footer-inner">
         <div class="footer-left">
           <div class="footer-contact">
-            <div class="footer-brand">e-WASH</div>
+            <div class="footer-brand">e-WASH . Super Sol . DESEI powered by MIRAE Design</div>
             <span>Phone: 0935-197-2829</span>
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=airene.c@mirae-design.com" target="_blank" rel="noopener noreferrer">airene.c@mirae-design.com</a>
           </div>
@@ -319,5 +333,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/mobile-nav.js"></script>
   </body>
 </html>

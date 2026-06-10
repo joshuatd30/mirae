@@ -29,7 +29,11 @@
           />
         </a>
       </div>
+            <button class="hamburger" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+        <span></span><span></span><span></span>
+      </button>
       <nav class="nav-links">
+
         <a href="index.html">Home</a>
         <div class="nav-dropdown">
           <a href="product.html" class="nav-dropdown-trigger">PRODUCT</a>
@@ -43,8 +47,30 @@
         <a href="about.html">About Us</a>
         <a href="faq.html">FAQ</a>
         <a href="contact.html">Contacts</a>
+      
       </nav>
     </header>
+
+    <!-- Mobile Nav Overlay & Drawer -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay" aria-hidden="true"></div>
+    <nav class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile navigation">
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation">&#x2715;</button>
+
+        <a href="index.html">Home</a>
+        <div class="nav-dropdown">
+          <a href="product.html" class="nav-dropdown-trigger">PRODUCT</a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="product.html">e-WASH</a></li>
+            <li><a href="super-sol.html">Super Sol</a></li>
+          </ul>
+        </div>
+        <a href="project.html">DESEI</a>
+        <a href="data.html" class="active">Data</a>
+        <a href="about.html">About Us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contacts</a>
+      
+    </nav>
 
     <main class="section">
      
@@ -526,7 +552,7 @@
       <div class="footer-inner">
         <div class="footer-left">
           <div class="footer-contact">
-            <div class="footer-brand">e-WASH</div>
+            <div class="footer-brand">e-WASH . Super Sol . DESEI powered by MIRAE Design</div>
             <span>Phone: 0935-197-2829</span>
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=airene.c@mirae-design.com" target="_blank" rel="noopener noreferrer">airene.c@mirae-design.com</a>
           </div>
@@ -546,6 +572,7 @@
     </footer>
     <script src="js/main.js"></script>
     <script src="js/data.js"></script>
+    <script src="js/mobile-nav.js"></script>
   </body>
 </html>
 

@@ -755,6 +755,8 @@ body.data-page.showing-supersol-test .ewash-only-section {
 
     .super-sol-result-card.has-inline-drawer.drawer-open > :not(.wwa-drawer-panel):not(.wwa-drawer-toggle) {
         width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .super-sol-base-copy {
@@ -1626,5 +1628,29 @@ body.data-page .lab-impact-box .impact-content p {
   .specs-col-subtitle {
     font-size: 1.4rem;
     margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .specs-table-box {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .specs-blue-table th,
+  .specs-blue-table td {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+
+  .containers {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .image-box img {
+    width: 100%;
+    max-width: 390px;
+    height: auto;
   }
 }

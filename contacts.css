@@ -50,9 +50,8 @@ body.contact-page::before {
 }
 
 .layout-contact {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.2rem;
+  display: flex;
+  justify-content: center;
   align-items: stretch;
 }
 
@@ -68,6 +67,7 @@ body.contact-page::before {
 .touch-panel {
   display: flex;
   flex-direction: column;
+  width: min(100%, 760px);
 }
 
 .touch-title,

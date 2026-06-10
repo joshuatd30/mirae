@@ -30,6 +30,9 @@
           />
         </a>
       </div>
+      <button class="hamburger" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+        <span></span><span></span><span></span>
+      </button>
       <nav class="nav-links">
         <a href="index.html" class="active">Home</a>
         <div class="nav-dropdown">
@@ -46,6 +49,23 @@
         <a href="contact.html">Contacts</a>
       </nav>
     </header>
+
+    <!-- Mobile Nav Overlay & Drawer -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay" aria-hidden="true"></div>
+    <nav class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile navigation">
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation">&#x2715;</button>
+      <a href="index.html" class="active">Home</a>
+      <span class="mobile-nav-section-label">Products</span>
+      <div class="mobile-sub-links">
+        <a href="product.html">e-WASH</a>
+        <a href="super-sol.html">Super Sol</a>
+      </div>
+      <a href="project.html">DESEI</a>
+      <a href="data.html">Data</a>
+      <a href="about.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contacts</a>
+    </nav>
 
     <main id="home" class="hero">
       <div class="hero-bg"></div>
@@ -74,7 +94,7 @@
                 src="images/EI.png"
                 alt="Environmental Impact"
                 class="hero-logo"
-                style="max-width: 420px; margin: 0 0 0 120px; padding: 0;"
+                id="hero-logo-ei"
                 decoding="async"
               />
             </div>
@@ -87,14 +107,9 @@
               <div class="hero-switch-layer is-on" data-hero-visual-layer>
                 <div class="hero-visual">
                   <img
-                    src="images/water.png"
+                    src="images/rtp.png"
                     alt="Water splash background"
                     class="hero-water-image"
-                  />
-                  <img
-                    src="images/bottle.png"
-                    alt="e-WASH multipurpose cleaner bottles"
-                    class="hero-bottle-image"
                   />
                 </div>
               </div>
@@ -111,7 +126,7 @@
                   src="images/DES.png"
                   alt="DESEI Model"
                   class="hero-ss-solo"
-                  style="max-width: 480px; margin: 0 0 0 -180px; padding: 0; display: block;"
+                  id="hero-img-desei"
                   decoding="async"
                 />
               </div>
@@ -482,7 +497,7 @@
               <div class="desc-content">
                 <img
                   id="desc-image"
-                  src="images/r1.png"
+                  src="images/rt1.png"
                   alt="Performance 1: Cleaning Ability"
                   class="desc-image"
                 />
@@ -506,7 +521,7 @@
       <div class="footer-inner">
         <div class="footer-left">
           <div class="footer-contact">
-            <div class="footer-brand">e-WASH</div>
+            <div class="footer-brand">e-WASH . Super Sol . DESEI powered by MIRAE Design</div>
             <span>Phone: 0935-197-2829</span>
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=airene.c@mirae-design.com"
@@ -544,5 +559,6 @@
 
     <script src="js/carousel.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/mobile-nav.js"></script>
   </body>
 </html>

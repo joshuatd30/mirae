@@ -29,6 +29,9 @@
           />
         </a>
       </div>
+      <button class="hamburger" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+        <span></span><span></span><span></span>
+      </button>
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <div class="nav-dropdown">
@@ -46,7 +49,24 @@
       </nav>
     </header>
 
-    <main class="section contact-section" aria-label="Contact form section">
+    <!-- Mobile Nav Overlay & Drawer -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay" aria-hidden="true"></div>
+    <nav class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile navigation">
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation">&#x2715;</button>
+      <a href="index.html">Home</a>
+      <span class="mobile-nav-section-label">Products</span>
+      <div class="mobile-sub-links">
+        <a href="product.html">e-WASH</a>
+        <a href="super-sol.html">Super Sol</a>
+      </div>
+      <a href="project.html">DESEI</a>
+      <a href="data.html">Data</a>
+      <a href="about.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html" class="active">Contacts</a>
+    </nav>
+
+    <main class="section contact-section" aria-label="Contact information section">
       <div class="section-inner">
         <div class="layout layout-contact">
         <div class="touch-panel" aria-label="Get in touch">
@@ -102,36 +122,6 @@
           </div>
         </div>
 
-        <div class="form-panel">
-          <h2 class="form-title">Contact Us</h2>
-          <form class="form" action="#" method="post">
-            <div class="form-row">
-              <label class="field">
-                <span class="field-label">First Name</span>
-                <input class="field-input" type="text" name="firstname" autocomplete="given-name" placeholder="First name" />
-              </label>
-              <label class="field">
-                <span class="field-label">Last Name</span>
-                <input class="field-input" type="text" name="lastname" autocomplete="family-name" placeholder="Last name" />
-              </label>
-            </div>
-            <div class="form-row">
-              <label class="field">
-                <span class="field-label">Mobile No</span>
-                <input class="field-input" type="tel" name="phone" autocomplete="tel" placeholder="(000) 000-0000" />
-              </label>
-              <label class="field">
-                <span class="field-label">Email</span>
-                <input class="field-input" type="email" name="email" autocomplete="email" placeholder="name@gmail.com" />
-              </label>
-            </div>
-            <label class="field field-textarea">
-              <span class="field-label">Message</span>
-              <textarea class="field-input" name="message" rows="4" placeholder="Write your message..."></textarea>
-            </label>
-            <button class="submit" type="submit">Submit</button>
-          </form>
-        </div>
       </div>
 
       <div class="map-section" aria-label="Location map">
@@ -158,7 +148,7 @@
       <div class="footer-inner">
         <div class="footer-left">
           <div class="footer-contact">
-            <div class="footer-brand">e-WASH</div>
+            <div class="footer-brand">e-WASH . Super Sol . DESEI powered by MIRAE Design</div>
             <span>Phone: 0935-197-2829</span>
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=airene.c@mirae-design.com" target="_blank" rel="noopener noreferrer">airene.c@mirae-design.com</a>
           </div>
@@ -176,6 +166,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/mobile-nav.js"></script>
   </body>
 </html>
 
